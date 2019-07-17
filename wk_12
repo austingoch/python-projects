@@ -1,0 +1,29 @@
+#Austin Goch - Wk12 Average Scores
+
+#Enter the 5 scores here.
+test1 = int(input('Enter the first test score: '))
+test2 = int(input('Enter the second test score: '))
+test3 = int(input('Enter the third test score: '))
+test4 = int(input('Enter the fourth test score: '))
+test5 = int(input('Enter the fifth  test score: '))
+
+total =(test1 + test2 + test3 + test4 + test5)
+
+#The Average is Calculated Here!
+def calc_average(total):
+return total / 5
+
+#This portion determines the Letter Grade.
+def determine_score(grade):
+if 90 <= grade <= 100: return 'A'
+elif 80 <= grade <= 89: return 'B'
+elif 70 <= grade <= 79: return 'C'
+elif 60 <= grade <= 69: return 'D'
+else: return 'F'
+
+#Output of all five scores.
+avg = calc_average(total)
+abc_grade = determine_score(avg)
+
+print("The average letter score is a(n): " + str(abc_grade))
+print('Of all five scores, the average numeric grade is: ' + str(avg))
